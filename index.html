@@ -1,0 +1,164 @@
+'<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Formularios Alvaro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3b867c5dc1.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+<!-- INI CARD -->
+  <container class="fluid">
+    <div class="card m-3 p-0" style="width:100%; font-size: small;">
+<!-- CARD HEADER INI -->
+
+<div class="card-header" style="max-height: 45px;">
+  <h4>Payment form example</h4>
+ </div>
+                 
+ <!-- CARD HEADER FIN -->
+
+
+                                
+  <div class="card-body mb-0">
+     
+     <ul class="list-group list-group-flush">
+      <!-- ALERT INI -->
+      <div class="alert alert-danger m-0 mb-4 p-2 text-left" role="alert">
+         Some fields are missing
+      </div></li>
+     <!-- ALERT FIN -->
+
+    <!-- FORMULARIO INI -->
+
+     <!-- PRIMERA LINEA -->
+     <div class="row mb-2">
+      <div class="col-md-5">
+        <label for="inputemail" class="form-label">Card#</label>
+        <input type="email" class="form-control" id="inputemail" placeholder="XXXXXXXXXXXXXXXX" style="font-size: small;">
+      </div>
+      <div class="col-md-3">
+        <label for="inputCVC" class="form-label">CVC#</label>
+        <input type="text" class="form-control" id="inputnumber" placeholder="OOOO" style="font-size: small;">
+      </div>
+      <div class="col-md-4">
+        <label for="inputAmount" class="form-label">Amount</label>
+        <input type="number" class="form-control" id="inputAmount" placeholder="Enter amount" style="font-size: small;">
+      </div>
+    </div>
+    
+     <!-- PRIMERA LINEA -->
+ 
+
+     <!-- SEGUNDA LINEA -->
+     <div class="row mb-2">
+     <div class="col-6">
+      <label for="inputFirstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="" style="font-size: small;">
+    </div>
+    <div class="col-6">
+      <label for="inputLastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="" style="font-size: small;">
+    </div>
+     </div>
+     <!-- SEGUNDA LINEA -->
+
+     <!-- TERCERA LINEA -->
+     <div class="row mb-3">
+     <div class="col-md-5">
+      
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="" style="font-size: small;">
+    </div>
+   
+    <div class=" desplegable col-md-3"><p>State</p>
+      <select class="form-select" aria-label="Default select example" style="font-size: small;">
+      
+        <option selected>Pick a state</option>
+        <option value="1">Texas</option>
+        <option value="2">North Dakota</option>
+        <option value="3">New York</option>
+        <option value="4">Whasington</option>
+        <option value="5">Lousiana</option>
+        <option value="6">New Mexico</option>
+        <option value="7">California</option>
+      </select>
+    </div>
+    
+  
+    <div class="col-md-3">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="" style="font-size: small;">
+    </div>
+     </div>
+
+     <!-- TERCERA LINEA -->
+
+<!-- CUARTA LINEA -->
+<div class="row mb-3">
+  <div class="col-md-6">
+    <label for="inputAccept" class="form-label">We accept</label>
+    <p></p>
+    <div class="row">
+      <div class="cuadro bg-secondary col-sm-12 mx-1 align-items-center" style="font-size: medium; position: relative;">
+        <div class="form-check form-check-inline bg my-1">
+          <input class="form-check-input-sm" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-visa"></i></label>
+        </div>
+      
+        <div class="form-check form-check-inline">
+          <input class="form-check-input-sm " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-amex"></i></label>
+        </div>
+      
+        <div class="form-check form-check-inline">
+          <input class="form-check-input-sm" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4">
+          <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-mastercard"></i></label>
+        </div>
+      
+        <div class="form-check form-check-inline">
+          <input class="form-check-input-sm" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+          <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-diners-club"></i></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-6">
+    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+    <textarea class="form-control" style="min-height: 40px;" id="exampleFormControlTextarea1" rows="3" placeholder=" " style="font-size: small;"></textarea>
+    <p class="text-sm">Add any notes here.</p>
+  </div>
+</div>
+
+
+      <!-- CUARTA LINEA -->
+
+
+ 
+ 
+  </div>
+
+                                
+ <div class="card-footer text-muted">
+    
+  <li class="list-group-item"><div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-secondary" type="button">Cancel</button>
+    <button class="btn btn-primary" type="button">Send</button>
+  </li>
+  </div>
+                              
+
+
+
+</div>
+
+ <!-- CARD END -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
